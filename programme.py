@@ -19,8 +19,7 @@ class Producteur(Thread):
     def run(self):
         nums = range(5)
         global queue
-
-         
+    
         while True:
             def do_something(sc):
 
@@ -81,7 +80,6 @@ def do_something(sc):
     print("Le contenu de la queu est",queue)
     # do your stuff
     s.enter(1, 1, do_something, (sc,))
-
 s.enter(1, 1, do_something, (s,))
 s.run()
 
